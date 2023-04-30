@@ -7,11 +7,11 @@
 <br>
 
 ## <picture><img src = "https://raw.githubusercontent.com/0xabdulkhalid/0xabdulkhalid/main/assets/mdImages/about_me.gif" width = 50px></picture> **About me**
-<picture> <img align="right" src="https://raw.githubusercontent.com/0xabdulkhalid/0xabdulkhalid/main/assets/mdImages/Right_Side.gif" width = 250px></picture>
+<picture> <img align="right" src="https://raw.githubusercontent.com/0xabdulkhalid/0xabdulkhalid/main/assets/mdImages/programming.svg" width = 250px></picture>
 <br>
 
 <br>
-<p align="left">I'm ... from ....<br><br>-🔭 I’m currently working on<br>- 🌱 I’m currently learning<br>- 4 In my free time I ...<br> -😄 Pronouns: He/Him <br>- Currently learning Web Development by Self</p>
+<p align="left">- Hello, and welcome to my GitHub profile! My name is Abdul Khalid, and I am a self-taught front-end developer with a passion for creating engaging and user-friendly web applications.<br>-🔭 I’m currently working on<br>- 🌱 I’m currently learning<br>- 4 In my free time I ...<br> -😄 Pronouns: He/Him <br>- Currently learning Web Development by Self</p>
 
 <br><br>
 
