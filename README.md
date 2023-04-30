@@ -1,122 +1,67 @@
-<h1 align="center"><b>Hi , I'm Kron Patel </b><img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35"></h1>
-<!-- https://git.io/typing-svg -->
-<div align="left">
-<a href=""><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=27&duration=3000&pause=500&color=1FF7E6&width=435&lines=Keron+Patel;I+am++a+Coder;Ai+%7C+Web+Design%7C+Automation" alt="Typing SVG" /></a>
+<h1 align="center"><b>HELLO EVERYONE</b><img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35"></h1>
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=25&duration=2000&pause=1000&width=435&lines=Keron+Patel;I+am+a+Coder;Ai+%7C+Web-Design+%7C+Automation)](https://git.io/typing-svg)
+
+I'm a 25-year-old boy pursuing computer engineering student. I love learning skills :)
+<img width="20%" align="right" src="GIF's\01.gif" />
+- 🔭 I’m currently working on  Automation 
+- 🌱 I’m currently exploring Machine Learning
+- 🤔 I’m looking for a good project
+- 😄 Pronouns: He/Him
+- 😎 I love Video games 🎮 and Listening Songs ♟️ in my spare time.
+
+<br>
+<h1 align="left"> <img src="GIF's\01.gif" width="30"> <b>: Fun Fact</b> </h1>
+<p> Well, hello there! I'm a 20-year-old white hate hacker, which means I'm like a superhero, but instead of saving the world, I just enjoy causing chaos on the internet (just kidding... maybe).<br><br>When I'm not busy hacking into secure systems, you can usually find me binge-watching my favorite TV shows or playing video games until the wee hours of the morning. Some people call me a computer genius, but I prefer to think of myself as a professional troublemaker.<br><br>My parents always told me to use my powers for good, but let's be real, what's the fun in that? So, instead, I use my skills to prank my friends and family. Just don't tell the CBI, okay?<br><br></p>
+
+
+<h1 align="left"> <img src="https://i.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.webp" width="30"> <b>: Skill & Tools</b> </h1>
+  <p align="center">
+  <img src="https://skillicons.dev/icons?i=py,js,html,css,bash,r,react,solidity,ts" />
+  <img src="https://skillicons.dev/icons?i=nextjs,nodejs" />
+  <img src="https://skillicons.dev/icons?i=git,github,linux,mongodb,mysql,postgres,raspberrypi" />
+  <img src="https://skillicons.dev/icons?i=ps,bootstrap" />
+  </p>
+
+<br>
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
+
+<h1 align="center"><b>Donation</b></h1>
+
+<p align="center">Greetings, fellow code geeks! I'm a programmer and coder student, and I'm not asking for your money - I want your support! For every donation you make, I promise to write one line of code while standing on one foot. It's a win-win - you get to help out a struggling student, and I get to improve my balance. So, let's code and balance our way to success!
+</p>
+
+<div align="center">
+<a href="https://www.buymeacoffee.com/keronpatel" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" width="150"></a>
 </div>
 
-<br>
-
-## <picture><img src = "https://raw.githubusercontent.com/0xabdulkhalid/0xabdulkhalid/main/assets/mdImages/about_me.gif" width = 50px></picture> **About me**
-<picture> <img align="right" src="https://raw.githubusercontent.com/0xabdulkhalid/0xabdulkhalid/main/assets/mdImages/programming.svg" width = 250px></picture>
-<br>
-
-<br>
-<p align="left">- Hello, and welcome to my GitHub profile! My name is Keron Patel, and I am a self-taught front-end developer with a passion for creating engaging and user-friendly web applications.<br>-🔭 I’m currently working on<br>- 🌱 I’m currently learning<br>- 4 In my free time I ...<br> -😄 Pronouns: He/Him <br>- Currently learning Web Development by Self</p>
-
-<br><br>
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"><br><br>
-
-## <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width ="25"><b> Skills</b>
-<br>
-<p align="center">
-
-- **Languages**:
-    
-    ![C](https://img.shields.io/badge/C%20-%232370ED.svg?style=for-the-badge&logo=c&logoColor=white)
-    ![C++](https://img.shields.io/badge/C++%20-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
-    ![Python](https://img.shields.io/badge/Python%20-%2314354C.svg?style=for-the-badge&logo=python&logoColor=white)
-
-<br>
-<br>   
-    
-- **Front-End Development**:
-
-   ![HTML5](https://img.shields.io/badge/HTML5%20-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-   ![CSS3](https://img.shields.io/badge/CSS%20-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-   ![JavaScript](https://img.shields.io/badge/JavaScript%20-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black)
-
-<br>
-
-- **Cloud Hosting**:
-
-    ![Github Pages](https://img.shields.io/badge/GitHub%20Pages-%23327FC7.svg?style=for-the-badge&logo=github&logoColor=white)
-    
-<br>
-
-- **Softwares and Tools**:
-
-    ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
-    ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
-    ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
-    ![Google](https://img.shields.io/badge/google-%234285F4.svg?style=for-the-badge&logo=google&logoColor=white)
-    ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
-    ![Arch Linux](https://img.shields.io/badge/Arch_Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white) 
-
-<br>
-
-- **Extras**:
-
-    ![GNU BASH](https://img.shields.io/badge/GNU%20Bash-000000?style=for-the-badge&logo=GNU%20Bash&logoColor=white)
-    ![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white)   
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
 
 
-</p>
+<h1 align="left"> <img src="GIF's\02.gif" width="50"><b>: Connect With Me</b></h1>
+
+[![image](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/keron-patel-9a757a222/)
+[![image](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/kron_._18)
+[![image](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/keron_1826)
+[![image](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:keronpatel5656@gmail.com) 
 <br>
 <br>
+<h1 align="left"> <img src="https://media0.giphy.com/media/cj87CxfRtrUifF3Ryk/giphy.gif?cid=ecf05e47lx1thg8e61tjqfpr4zemby622so2pa1j3sqcsbxp&ep=v1_stickers_search&rid=giphy.gif&ct=s" width="25"><b>: Github Stats <b> </h1>
 
------
-## <img src="https://media1.giphy.com/media/uhWLu2lsU0rfLiwYlI/giphy.gif?cid=ecf05e47t667k9v9bxxxa5ifzu3bw8ucrorisedpgb8zyx2u&ep=v1_stickers_search&rid=giphy.gif&ct=s" width ="25"><b> Github Stats</b>
-<div align="center">
+<div align="left">
   <img src="https://github-readme-stats.vercel.app/api?username=kronpatel&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=tokyonight&locale=en&hide_border=true&order=1" height="150" alt="stats graph"  />
   <img src="https://github-readme-stats.vercel.app/api/top-langs?username=kronpatel&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=tokyonight&hide_border=true&order=2" height="150" alt="languages graph"  />
-</div>
-
-###
-<br>
-<br>
-
-## <b> Let's Connect..!</b><img src="https://github.com/0xabdulkhalid/0xabdulkhalid/blob/main/assets/mdImages/handshake.gif?raw=true" width ="80">
-<br>
-<div align='left'>
-
-<ul>
-
-<li>
-<a href="https://www.linkedin.com/in/keron-patel-9a757a222/" target="_blank">
-<img src="https://img.shields.io/badge/linkedin:  -0077B5.svg?color=405DE6&style=for-the-badge&logo=linkedin&logoColor=white" alt=linkedin style="margin-bottom: 5px;"/>
-</a>
-</li>
-
-<br>
-
-<li>
-<a href="https://twitter.com/keron_1826" target="_blank">
-<img src="https://img.shields.io/badge/twitter:  -%2300acee.svg?color=1DA1F2&style=for-the-badge&logo=twitter&logoColor=white" alt=twitter style="margin-bottom: 5px;"/>
-</a>
-</li>
-
-<br>
-
-<li>
-<a href="keronpatel5656@gmail.com" target="_blank">
-<img src="https://img.shields.io/badge/gmail:  -%23EA4335.svg?style=for-the-badge&logo=gmail&logoColor=white" t=mail style="margin-bottom: 5px;" />
-</a>
-</li>
-	
-</ul>
-</div>
-
-<br>
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-<br>
-<br>
-<br>
-
-<div align='center'>
-
-## <b>Thanks for exploring my digital home on GitHub!Explorer</b>
-
+  <img src="https://streak-stats.demolab.com/?user=kronpatel&locale=en&mode=daily&theme=tokyonight&hide_border=true&border_radius=5&order=3" height="150" alt="streak graph"  />
 </div>
 <br>
 <br>
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
+
+<h3 align="center">
+  <img src="https://emoji.discord.st/emojis/768b108d-274f-4f44-a634-8477b16efce7.gif" width="25">
+  &nbsp;<b> Thanks for exploring my digital home on GitHub!<b> &nbsp;
+  <img src="https://emoji.discord.st/emojis/768b108d-274f-4f44-a634-8477b16efce7.gif" width="25">
+</h3>
+
