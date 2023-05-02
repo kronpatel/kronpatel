@@ -2,7 +2,7 @@
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=25&duration=2000&pause=1000&width=435&lines=Keron+Patel;I+am+a+Coder;Ai+%7C+Web-Design+%7C+Automation)](https://git.io/typing-svg)
 
-I'm a 25-year-old boy pursuing computer engineering student. I love learning skills :)
+I'm a 23-year-old boy pursuing computer engineering student. I love learning skills :)
 <img width="20%" align="right" src="GIF's\01.gif" />
 - 🔭 I’m currently working on  Automation 
 - 🌱 I’m currently exploring Machine Learning
