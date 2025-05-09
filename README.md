@@ -64,35 +64,3 @@ I'm a 23-year-old boy pursuing computer engineering student. I love learning ski
   &nbsp;<b> Thanks for exploring my digital home on GitHub!<b> &nbsp;
   <img src="https://emoji.discord.st/emojis/768b108d-274f-4f44-a634-8477b16efce7.gif" width="25">
 </h3>
-
-
-
-# Hi, I'm [Your Name] 👋
-
-Welcome to my GitHub profile! I'm passionate about coding and working on various interesting projects. You’ll find a variety of repositories that I’ve worked on, ranging from web development to Chrome extensions and automation tools.
-
-![Profile Image](https://i.postimg.cc/Sx1t1dcm/screencapture-github-jeturgavli-2025-05-09-10-29-37.png)
-
-## 🛠️ Technologies & Tools
-
-- **Languages**: JavaScript, Python, HTML, CSS
-- **Frameworks**: React, Node.js, Express
-- **Tools**: Git, Chrome Extensions, APIs
-- **Databases**: MongoDB, Firebase
-
-## 🔧 GitHub Stats
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=jeturgavli&show_icons=true&hide_title=true)
-
-## 📝 Latest Projects
-
-- **[Auto Save Tabs Extension](https://github.com/jeturgavli/auto-save-tabs)**: A Chrome extension that automatically saves your browser tabs with features like date grouping, pinning, and export options.
-- **[Task Automation Script](https://github.com/jeturgavli/task-automation)**: A Python script for automating tasks like file organization and backups.
-
-## 💬 Let's Connect
-
-- **LinkedIn**: [Your LinkedIn](https://www.linkedin.com)
-- **Twitter**: [@YourHandle](https://twitter.com)
-- **Blog**: [Your Blog](https://your-blog.com)
-
-Feel free to explore my repositories, star your favorite ones, and don't hesitate to open issues or PRs if you'd like to contribute!
