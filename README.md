@@ -42,6 +42,15 @@ I'm a 23-year-old boy pursuing computer engineering student. I love learning ski
 
 [![TryHackMe Badge](https://tryhackme-badges.s3.amazonaws.com/KERZOX.png)](https://tryhackme.com/p/KERZOX)
 
+<h2 align="center">🛡️ My TryHackMe Badge</h2>
+
+<p align="center">
+  <a href="https://tryhackme.com/p/KERZOX">
+    <img src="https://tryhackme-badges.s3.amazonaws.com/KERZOX.png" alt="TryHackMe Badge">
+  </a>
+</p>
+
+
 <h1 align="left"> <img src="GIF's\02.gif" width="50"><b>: Connect With Me</b></h1>
 
 [![image](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/keron-patel-9a757a222/)
