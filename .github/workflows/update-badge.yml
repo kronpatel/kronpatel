@@ -2,7 +2,7 @@ name: Refresh README
 
 on:
   schedule:
-    - cron: '0 */6 * * *'   # Har 6 ghante me chalega
+    - cron: '0 */1 * * *'   # Har 6 ghante me chalega
   workflow_dispatch:         # Manual run ka option
 
 jobs:
