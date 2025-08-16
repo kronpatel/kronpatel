@@ -32,13 +32,6 @@ I'm a 23-year-old boy pursuing computer engineering student. I love learning ski
 <p align="center">Greetings, fellow code geeks! I'm a programmer and coder student, and I'm not asking for your money - I want your support! For every donation you make, I promise to write one line of code while standing on one foot. It's a win-win - you get to help out a struggling student, and I get to improve my balance. So, let's code and balance our way to success!
 </p>
 
-<div align="center">
-<a href="https://www.buymeacoffee.com/keronpatel" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" width="150"></a>
-</div>
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
-
-
 <h2 align="center">🛡️ My TryHackMe Badge</h2>
 
 <p align="center">
@@ -46,6 +39,13 @@ I'm a 23-year-old boy pursuing computer engineering student. I love learning ski
     <img src="https://tryhackme-badges.s3.amazonaws.com/KERZOX.png" alt="TryHackMe Badge">
   </a>
 </p>
+
+
+<div align="center">
+<a href="https://www.buymeacoffee.com/keronpatel" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" width="150"></a>
+</div>
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
 
 
 <h1 align="left"> <img src="GIF's\02.gif" width="50"><b>: Connect With Me</b></h1>
