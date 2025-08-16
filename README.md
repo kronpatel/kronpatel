@@ -26,7 +26,6 @@ I'm a 23-year-old boy pursuing computer engineering student. I love learning ski
 <br>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
-<iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=5460896" style='border:none;'></iframe>
 
 <h1 align="center"><b>Donation</b></h1>
 
