@@ -38,6 +38,9 @@ I'm a 23-year-old boy pursuing computer engineering student. I love learning ski
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
 
+## My TryHackMe Badge 🛡️
+
+![TryHackMe Badge](https://tryhackme-badges.s3.amazonaws.com/KERZOX.png)
 
 <h1 align="left"> <img src="GIF's\02.gif" width="50"><b>: Connect With Me</b></h1>
 
