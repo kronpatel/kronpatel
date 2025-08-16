@@ -1,0 +1,26 @@
+name: Refresh README
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'   # Har 6 ghante me chalega
+  workflow_dispatch:         # Manual run ka option
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Update README timestamp
+        run: |
+          sed -i "s|<!--badge-update-->.*|<!--badge-update--> Updated: $(date)|" README.md
+
+      - name: Commit changes
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "actions@github.com"
+          git add README.md
+          git commit -m "Auto-refresh README to update badge" || echo "No changes to commit"
+          git push
