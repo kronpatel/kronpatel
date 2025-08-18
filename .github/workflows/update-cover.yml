@@ -3,7 +3,7 @@ name: Update Random Cover
 on:
   workflow_dispatch:   # manually trigger karne ke liye
   schedule:
-    - cron: "0 */6 * * *"  # har 6 ghante me auto run
+    - cron: "*/5 * * * *"  # har 6 ghante me auto run
 
 permissions:
   contents: write
