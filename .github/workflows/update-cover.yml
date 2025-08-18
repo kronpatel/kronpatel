@@ -13,35 +13,29 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout repo
         uses: actions/checkout@v3
 
       - name: Pick random file
         id: random
         run: |
-          echo "🔍 Searching images in Covers/{GIF,PNG,JPG}/"
-          # Find images in all 3 folders (case sensitive)
-          mapfile -t files < <(find Covers/GIF Covers/PNG Covers/JPG -type f KATEX_INLINE_OPEN -iname "*.jpg" -o -iname "*.png" -o -iname "*.gif" KATEX_INLINE_CLOSE)
-          
+          echo "🔍 Searching Covers/..."
+          mapfile -t files < <(find Covers -type f KATEX_INLINE_OPEN -iname "*.jpg" -o -iname "*.png" -o -iname "*.gif" KATEX_INLINE_CLOSE)
           if [ ${#files[@]} -eq 0 ]; then
-            echo "❌ No image files found!"
+            echo "❌ No images in Covers/"
             exit 1
           fi
           
           random_file="${files[$RANDOM % ${#files[@]}]}"
           echo "✅ Selected: $random_file"
-          echo "file=$random_file" >> $GITHUB_OUTPUT
-
-      - name: Update README (replace only URL)
-        run: |
-          new_url="https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/main/${{ steps.random.outputs.file }}"
-          echo "👉 Updating MasterHead with: $new_url"
-          sed -i "s|https://raw.githubusercontent.com.*)|${new_url})|" README.md || true
+          
+          # Copy random file as root-level cover.gif
+          cp "$random_file" cover.gif
 
       - name: Commit and Push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add README.md || true
-          git commit -m "🔄 Update random cover [skip ci]" || echo "⚠️ No changes to commit"
+          git add cover.gif
+          git commit -m "🔄 Update random cover [skip ci]" || echo "⚠️ No changes"
           git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:${{ github.ref }} --force
