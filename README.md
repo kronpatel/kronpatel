@@ -1,3 +1,12 @@
+<p align="center">
+  <img src="banner/banner1.png" alt="My Main Banner" width="100%" />
+</p>
+
+
+<p align="center">
+  <img src="banner/slideshow.gif" alt="Rotating Banners" width="100%" />
+</p>
+
 <h1 align="center"><b>HELLO EVERYONE</b><img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35"></h1>
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=25&duration=2000&pause=1000&width=435&lines=Keron+Patel;I+am+a+Coder;Ai+%7C+Web-Design+%7C+Automation)](https://git.io/typing-svg)
