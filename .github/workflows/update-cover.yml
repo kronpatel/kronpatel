@@ -1,7 +1,9 @@
 name: Update Random Cover
 
 on:
-  workflow_dispatch:
+  workflow_dispatch:   # manually trigger karne ke liye
+  schedule:
+    - cron: "0 */6 * * *"  # har 6 ghante me auto run
 
 permissions:
   contents: write
@@ -23,15 +25,14 @@ jobs:
 
       - name: Select Random Cover
         run: |
-          mkdir -p covers
-          echo "Checking available covers…"
-          ls covers
-          SELECTED=$(ls covers | shuf -n 1)
-          echo "Random selected:" $SELECTED
-          cp "covers/$SELECTED" cover.png
+          echo "Available covers:"
+          ls Covers/GIF
+          SELECTED=$(ls Covers/GIF | shuf -n 1)
+          echo "Random selected: $SELECTED"
+          cp "Covers/GIF/$SELECTED" cover.gif
 
       - name: Commit and Push
         run: |
-          git add cover.png
+          git add cover.gif
           git commit -m "🔄 Update Random Cover → $SELECTED" || echo "No changes to commit"
           git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:${{ github.ref }}
