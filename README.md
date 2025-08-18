@@ -22,6 +22,11 @@ I'm a 23-year-old boy pursuing computer engineering student. I love learning ski
 <br>
 <h1 align="left"> <img src="GIF's\01.gif" width="30"> <b>: Fun Fact</b> </h1>
 <p> Well, hello there! I'm a 20-year-old white hate hacker, which means I'm like a superhero, but instead of saving the world, I just enjoy causing chaos on the internet (just kidding... maybe).<br><br>When I'm not busy hacking into secure systems, you can usually find me binge-watching my favorite TV shows or playing video games until the wee hours of the morning. Some people call me a computer genius, but I prefer to think of myself as a professional troublemaker.<br><br>My parents always told me to use my powers for good, but let's be real, what's the fun in that? So, instead, I use my skills to prank my friends and family. Just don't tell the CBI, okay?<br><br></p>
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
+
+[![An image of @kronpatel's Holopin badges, which is a link to view their full Holopin profile](https://holopin.me/kronpatel)](https://holopin.io/@kronpatel)
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
 
 
 <h1 align="left"> <img src="https://i.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.webp" width="30"> <b>: Skill & Tools</b> </h1>
