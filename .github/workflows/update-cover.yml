@@ -2,7 +2,7 @@ name: Update Random Cover
 
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "*/5 * * * *"   # every 5 min
   workflow_dispatch:
 
 permissions:
@@ -19,17 +19,21 @@ jobs:
       - name: Pick random file
         id: random
         run: |
-          echo "🔍 Searching Covers/..."
-          # FIXED: Escaped brackets with double backslash
-          mapfile -t files < <(find Covers -type f \KATEX_INLINE_OPEN -iname "*.jpg" -o -iname "*.png" -o -iname "*.gif" \KATEX_INLINE_CLOSE)
-          
+          echo "🔍 Searching in Covers/GIF, Covers/PNG, Covers/JPG..."
+          # Collect all image paths into one array (ignore sed bracket escaping problem)
+          files=()
+          files+=($(find Covers/GIF -type f -iname "*.gif"))
+          files+=($(find Covers/PNG -type f -iname "*.png"))
+          files+=($(find Covers/JPG -type f -iname "*.jpg"))
+
           if [ ${#files[@]} -eq 0 ]; then
-            echo "❌ No images in Covers/"
+            echo "❌ No images found!"
             exit 1
           fi
-          
+
           random_file="${files[$RANDOM % ${#files[@]}]}"
           echo "✅ Selected: $random_file"
+
           cp "$random_file" cover.gif
           echo "file=$random_file" >> $GITHUB_OUTPUT
 
