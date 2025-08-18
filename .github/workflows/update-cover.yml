@@ -2,7 +2,7 @@ name: Update Random Cover
 
 on:
   schedule:
-    - cron: "*/5 * * * *"   # har 5 min me chalega
+    - cron: "*/5 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -20,7 +20,9 @@ jobs:
         id: random
         run: |
           echo "🔍 Searching Covers/..."
+          # Correct find command with escaped brackets
           mapfile -t files < <(find Covers -type f KATEX_INLINE_OPEN -iname "*.jpg" -o -iname "*.png" -o -iname "*.gif" KATEX_INLINE_CLOSE)
+          
           if [ ${#files[@]} -eq 0 ]; then
             echo "❌ No images in Covers/"
             exit 1
@@ -28,9 +30,8 @@ jobs:
           
           random_file="${files[$RANDOM % ${#files[@]}]}"
           echo "✅ Selected: $random_file"
-          
-          # Copy random file as root-level cover.gif
           cp "$random_file" cover.gif
+          echo "file=$random_file" >> $GITHUB_OUTPUT
 
       - name: Commit and Push
         run: |
