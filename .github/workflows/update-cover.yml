@@ -2,7 +2,7 @@ name: Update Random Cover
 
 on:
   schedule:
-    - cron: "*/5 * * * *"   # every 5 min
+    - cron: "*/5 * * * *"   # har 5 min me chalega (UTC time me)
   workflow_dispatch:
 
 permissions:
@@ -20,7 +20,6 @@ jobs:
         id: random
         run: |
           echo "🔍 Searching in Covers/GIF, Covers/PNG, Covers/JPG..."
-          # Collect all image paths into one array (ignore sed bracket escaping problem)
           files=()
           files+=($(find Covers/GIF -type f -iname "*.gif"))
           files+=($(find Covers/PNG -type f -iname "*.png"))
@@ -32,15 +31,15 @@ jobs:
           fi
 
           random_file="${files[$RANDOM % ${#files[@]}]}"
-          echo "✅ Selected: $random_file"
+          echo "✅ Selected file: $random_file"
 
-          cp "$random_file" cover.gif
-          echo "file=$random_file" >> $GITHUB_OUTPUT
+          # ⬇⬇ Make a copy but keep originals untouched
+          cp "$random_file" Covers/cover.gif
 
       - name: Commit and Push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add cover.gif
-          git commit -m "🔄 Update random cover [skip ci]" || echo "⚠️ No changes"
+          git add Covers/cover.gif
+          git commit -m "🔄 Update random cover [skip ci]" || echo "⚠️ No changes to commit"
           git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:${{ github.ref }} --force
