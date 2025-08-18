@@ -1,0 +1,32 @@
+name: Update Random Cover
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"   # har 5 min me chalega
+  workflow_dispatch:
+
+jobs:
+  update-cover:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Pick random file
+        id: random
+        run: |
+          files=($(find Covers -type f \( -iname "*.jpg" -o -iname "*.png" -o -iname "*.gif" \)))
+          random_file=${files[$RANDOM % ${#files[@]}]}
+          echo "file=$random_file" >> $GITHUB_OUTPUT
+
+      - name: Update README (only MasterHead line)
+        run: |
+          sed -i "s|^!\[MasterHead\](.*)|![MasterHead](https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/main/${{ steps.random.outputs.file }})|" README.md
+
+      - name: Commit and Force Push (single commit only)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "chore: update random cover [skip ci]" --amend || true
+          git push origin main --force
