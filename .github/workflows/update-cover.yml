@@ -20,8 +20,8 @@ jobs:
         id: random
         run: |
           echo "🔍 Searching Covers/..."
-          # Correct find command with escaped brackets
-          mapfile -t files < <(find Covers -type f KATEX_INLINE_OPEN -iname "*.jpg" -o -iname "*.png" -o -iname "*.gif" KATEX_INLINE_CLOSE)
+          # FIXED: Escaped brackets with double backslash
+          mapfile -t files < <(find Covers -type f \KATEX_INLINE_OPEN -iname "*.jpg" -o -iname "*.png" -o -iname "*.gif" \KATEX_INLINE_CLOSE)
           
           if [ ${#files[@]} -eq 0 ]; then
             echo "❌ No images in Covers/"
