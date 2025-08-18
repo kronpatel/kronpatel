@@ -2,7 +2,7 @@ name: Update Random Cover
 
 on:
   schedule:
-    - cron: "*/5 * * * *"   # har 5 min me chalega (UTC time me)
+    - cron: "*/5 * * * *"   # every 5 min
   workflow_dispatch:
 
 permissions:
@@ -25,21 +25,21 @@ jobs:
           files+=($(find Covers/PNG -type f -iname "*.png"))
           files+=($(find Covers/JPG -type f -iname "*.jpg"))
 
-          if [ ${#files[@]} -eq 0 ]; then
-            echo "❌ No images found!"
-            exit 1
-          fi
-
           random_file="${files[$RANDOM % ${#files[@]}]}"
-          echo "✅ Selected file: $random_file"
+          echo "✅ Selected: $random_file"
 
-          # ⬇⬇ Make a copy but keep originals untouched
-          cp "$random_file" Covers/cover.gif
+          echo "file=$random_file" >> $GITHUB_OUTPUT
+
+      - name: Update README
+        run: |
+          random_file="${{ steps.random.outputs.file }}"
+          # Replace line containing "![Cover](" with new image path
+          sed -i "s|!\[Cover\](.*)|![Cover]($random_file)|" README.md
 
       - name: Commit and Push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add Covers/cover.gif
-          git commit -m "🔄 Update random cover [skip ci]" || echo "⚠️ No changes to commit"
-          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:${{ github.ref }} --force
+          git add README.md
+          git commit -m "🔄 Update random cover [skip ci]" || echo "⚠️ No changes"
+          git push
