@@ -1,4 +1,4 @@
-![MasterHead](https://raw.githubusercontent.com/kronpatel/kronpatel/main/Covers/xyz/abc.gif)
+![MasterHead](https://raw.githubusercontent.com/kronpatel/kronpatel/main/Covers/GIF/05.gif)
 
 <h1 align="center"><b>HELLO EVERYONE</b><img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35"></h1>
 
