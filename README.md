@@ -1,4 +1,4 @@
-![MasterHead](https://raw.githubusercontent.com/kronpatel/kronpatel/main/Covers/GIF/01.gif)
+<!--![MasterHead](https://raw.githubusercontent.com/kronpatel/kronpatel/main/Covers/GIF/01.gif)-->
 
 ![MasterHead](https://raw.githubusercontent.com/kronpatel/kronpatel/main/cover.gif)
 
