@@ -1,7 +1,7 @@
 name: Update Random Cover
 
 on:
-  workflow_dispatch:   # manually trigger karne ke liye
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -14,17 +14,24 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v3
         with:
-          persist-credentials: false   # avoid conflicts
+          persist-credentials: false
 
       - name: Setup Git
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Update Cover Image
+      - name: Select Random Cover
         run: |
-          # Example: Random cover replace karo
-          cp covers/$(ls covers | shuf -n1) cover.png   # covers folder me se ek random cover copy karega
+          mkdir -p covers
+          echo "Checking available covers…"
+          ls covers
+          SELECTED=$(ls covers | shuf -n 1)
+          echo "Random selected:" $SELECTED
+          cp "covers/$SELECTED" cover.png
+
+      - name: Commit and Push
+        run: |
           git add cover.png
-          git commit -m "🔄 Auto update cover" || echo "No changes to commit"
+          git commit -m "🔄 Update Random Cover → $SELECTED" || echo "No changes to commit"
           git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:${{ github.ref }}
