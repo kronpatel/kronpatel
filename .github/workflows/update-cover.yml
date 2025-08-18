@@ -19,21 +19,23 @@ jobs:
       - name: Pick random file
         id: random
         run: |
-          # List all files (gif, png, jpg) from Covers and subfolders
-          mapfile -t files < <(find Covers -type f KATEX_INLINE_OPEN -iname "*.jpg" -o -iname "*.png" -o -iname "*.gif" KATEX_INLINE_CLOSE)
+          echo "🔍 Searching images in Covers/{GIF,PNG,JPG}/"
+          # Find images in all 3 folders (case sensitive)
+          mapfile -t files < <(find Covers/GIF Covers/PNG Covers/JPG -type f KATEX_INLINE_OPEN -iname "*.jpg" -o -iname "*.png" -o -iname "*.gif" KATEX_INLINE_CLOSE)
+          
           if [ ${#files[@]} -eq 0 ]; then
-            echo "❌ No image files found in Covers/"
+            echo "❌ No image files found!"
             exit 1
           fi
-          random_file=${files[$RANDOM % ${#files[@]}]}
+          
+          random_file="${files[$RANDOM % ${#files[@]}]}"
+          echo "✅ Selected: $random_file"
           echo "file=$random_file" >> $GITHUB_OUTPUT
-          echo "✅ Selected file: $random_file"
 
       - name: Update README (replace only URL)
         run: |
           new_url="https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/main/${{ steps.random.outputs.file }}"
-          echo "👉 Updating MasterHead line with $new_url"
-          # Agar na mile to bhi fail na ho
+          echo "👉 Updating MasterHead with: $new_url"
           sed -i "s|https://raw.githubusercontent.com.*)|${new_url})|" README.md || true
 
       - name: Commit and Push
