@@ -16,7 +16,7 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: Pick random file
+      - name: Pick next shuffled file
         id: random
         run: |
           echo "🔍 Searching in Covers/GIF, Covers/PNG, Covers/JPG..."
@@ -25,9 +25,24 @@ jobs:
           files+=($(find Covers/PNG -type f -iname "*.png"))
           files+=($(find Covers/JPG -type f -iname "*.jpg"))
 
-          random_file="${files[$RANDOM % ${#files[@]}]}"
-          echo "✅ Selected: $random_file"
+          # If no files found
+          if [ ${#files[@]} -eq 0 ]; then
+            echo "❌ No cover files found!"
+            exit 1
+          fi
 
+          # If shuffled list doesn't exist OR is empty → make new shuffle
+          if [ ! -f .cover_queue ] || [ ! -s .cover_queue ]; then
+            echo "♻️ Creating a new shuffled list"
+            printf "%s\n" "${files[@]}" | shuf > .cover_queue
+          fi
+
+          # Pick first line as current file
+          random_file=$(head -n 1 .cover_queue)
+          # Remove first line from queue
+          tail -n +2 .cover_queue > .cover_queue.tmp && mv .cover_queue.tmp .cover_queue
+
+          echo "✅ Selected: $random_file"
           echo "file=$random_file" >> $GITHUB_OUTPUT
 
       - name: Update README
@@ -40,6 +55,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add README.md
+          git add README.md .cover_queue
           git commit -m "🔄 Update random cover [skip ci]" || echo "⚠️ No changes"
           git push
