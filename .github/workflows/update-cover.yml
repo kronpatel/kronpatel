@@ -1,32 +1,30 @@
 name: Update Random Cover
 
 on:
-  schedule:
-    - cron: "*/5 * * * *"   # har 5 min me chalega
-  workflow_dispatch:
+  workflow_dispatch:   # manually trigger karne ke liye
+
+permissions:
+  contents: write
 
 jobs:
   update-cover:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout repository
+      - name: Checkout Repo
         uses: actions/checkout@v3
+        with:
+          persist-credentials: false   # avoid conflicts
 
-      - name: Pick random file
-        id: random
+      - name: Setup Git
         run: |
-          files=($(find Covers -type f \( -iname "*.jpg" -o -iname "*.png" -o -iname "*.gif" \)))
-          random_file=${files[$RANDOM % ${#files[@]}]}
-          echo "file=$random_file" >> $GITHUB_OUTPUT
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Update README (only MasterHead line)
+      - name: Update Cover Image
         run: |
-          sed -i "s|^!\[MasterHead\](.*)|![MasterHead](https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/main/${{ steps.random.outputs.file }})|" README.md
-
-      - name: Commit and Force Push (single commit only)
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add README.md
-          git commit -m "chore: update random cover [skip ci]" --amend || true
-          git push origin main --force
+          # Example: Random cover replace karo
+          cp covers/$(ls covers | shuf -n1) cover.png   # covers folder me se ek random cover copy karega
+          git add cover.png
+          git commit -m "🔄 Auto update cover" || echo "No changes to commit"
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:${{ github.ref }}
