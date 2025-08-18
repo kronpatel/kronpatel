@@ -1,9 +1,4 @@
 <p align="center">
-  <img src="banner/banner1.png" alt="My Main Banner" width="100%" />
-</p>
-
-
-<p align="center">
   <img src="banner/slideshow.gif" alt="Rotating Banners" width="100%" />
 </p>
 
