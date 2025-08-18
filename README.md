@@ -1,11 +1,4 @@
-<<<<<<< HEAD
 ![MasterHead](https://raw.githubusercontent.com/kronpatel/kronpatel/main/Covers/GIF/05.gif)
-
-=======
->>>>>>> a0ac9bf1234fba2d2070a8a6967f88d9a1fb0211
-<p align="center">
-  <img src="banner/slideshow.gif" alt="Rotating Banners" width="100%" />
-</p>
 
 <h1 align="center"><b>HELLO EVERYONE</b><img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35"></h1>
 
