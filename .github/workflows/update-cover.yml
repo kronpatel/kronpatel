@@ -1,38 +1,32 @@
 name: Update Random Cover
 
 on:
-  workflow_dispatch:   # manually trigger karne ke liye
   schedule:
-    - cron: "*/5 * * * *"  # har 6 ghante me auto run
-
-permissions:
-  contents: write
+    - cron: "*/5 * * * *"   # har 5 min me chalega
+  workflow_dispatch:
 
 jobs:
   update-cover:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout Repo
+      - name: Checkout repository
         uses: actions/checkout@v3
-        with:
-          persist-credentials: false
 
-      - name: Setup Git
+      - name: Pick random file
+        id: random
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          files=($(find Covers -type f \( -iname "*.jpg" -o -iname "*.png" -o -iname "*.gif" \)))
+          random_file=${files[$RANDOM % ${#files[@]}]}
+          echo "file=$random_file" >> $GITHUB_OUTPUT
 
-      - name: Select Random Cover
+      - name: Update README (only MasterHead line)
         run: |
-          echo "Available covers:"
-          ls Covers/GIF
-          SELECTED=$(ls Covers/GIF | shuf -n 1)
-          echo "Random selected: $SELECTED"
-          cp "Covers/GIF/$SELECTED" cover.gif
+          sed -i "s|^!\[MasterHead\](.*)|![MasterHead](https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/main/${{ steps.random.outputs.file }})|" README.md
 
-      - name: Commit and Push
+      - name: Commit and Force Push (single commit only)
         run: |
-          git add cover.gif
-          git commit -m "🔄 Update Random Cover → $SELECTED" || echo "No changes to commit"
-          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:${{ github.ref }}
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "chore: update random cover [skip ci]" --amend || true
+          git push origin main --force
