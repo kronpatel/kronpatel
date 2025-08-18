@@ -5,9 +5,13 @@ on:
     - cron: "*/5 * * * *"   # har 5 min me chalega
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   update-cover:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -15,15 +19,18 @@ jobs:
       - name: Pick random file
         id: random
         run: |
-          files=($(find Covers -type f \( -iname "*.jpg" -o -iname "*.png" -o -iname "*.gif" \)))
+          files=($(find Covers -type f KATEX_INLINE_OPEN -iname "*.jpg" -o -iname "*.png" -o -iname "*.gif" KATEX_INLINE_CLOSE))
           random_file=${files[$RANDOM % ${#files[@]}]}
           echo "file=$random_file" >> $GITHUB_OUTPUT
+          echo "Selected file: $random_file"
 
-      - name: Update README (only MasterHead line)
+      - name: Update README (replace only URL)
         run: |
-          sed -i "s|^!\[MasterHead\](.*)|![MasterHead](https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/main/${{ steps.random.outputs.file }})|" README.md
+          new_url="https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/main/${{ steps.random.outputs.file }}"
+          # replace sirf URL part, pura line nahi
+          sed -i "s|https://raw.githubusercontent.com.*)|${new_url})|" README.md
 
-      - name: Commit and Force Push (single commit only)
+      - name: Commit and Push (force replace last commit)
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
