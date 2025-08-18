@@ -3,7 +3,7 @@ name: Update Random Cover
 on:
   schedule:
     - cron: "*/5 * * * *"   # har 5 min me chalega
-  workflow_dispatch:
+  workflow_dispatch:        # manually trigger karne ke liye
 
 permissions:
   contents: write
@@ -19,7 +19,11 @@ jobs:
       - name: Pick random file
         id: random
         run: |
+          # Find all images inside Covers/ (subfolders GIF, PNG, JPG)
           files=($(find Covers -type f KATEX_INLINE_OPEN -iname "*.jpg" -o -iname "*.png" -o -iname "*.gif" KATEX_INLINE_CLOSE))
+          echo "Total files found: ${#files[@]}"
+          
+          # Select one random file
           random_file=${files[$RANDOM % ${#files[@]}]}
           echo "file=$random_file" >> $GITHUB_OUTPUT
           echo "Selected file: $random_file"
@@ -27,11 +31,10 @@ jobs:
       - name: Update README (replace only URL)
         run: |
           new_url="https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/main/${{ steps.random.outputs.file }}"
-          # Sirf URL ko replace karo, full line ko mat chhedo
+          echo "Replacing with: $new_url"
           sed -i "s|https://raw.githubusercontent.com.*)|${new_url})|" README.md
-          echo "Replaced with $new_url"
 
-      - name: Commit and Push
+      - name: Commit and Push (force replace last commit)
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
