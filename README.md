@@ -36,10 +36,6 @@ I'm a 23-year-old boy pursuing computer engineering student. I love learning ski
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
 
-<h2 align="center">🛡️ My TryHackMe Badge</h2>
-
-[![TryHackMe Badge](https://tryhackme-badges.s3.amazonaws.com/KERZOX.png?raw=true)](https://tryhackme.com/p/KERZOX)
-
 
 <h1 align="center"><b>Donation</b></h1>
 
@@ -78,46 +74,3 @@ I'm a 23-year-old boy pursuing computer engineering student. I love learning ski
   &nbsp;<b> Thanks for exploring my digital home on GitHub!<b> &nbsp;
   <img src="https://emoji.discord.st/emojis/768b108d-274f-4f44-a634-8477b16efce7.gif" width="25">
 </h3>
-
-<!--badge-update--> Last Update: 2025-08-17
-Last refresh: Mon Aug 18 15:15:16 UTC 2025
-Last refresh: Mon Aug 18 15:33:54 UTC 2025
-Last refresh: Mon Aug 18 15:46:42 UTC 2025
-Last refresh: Mon Aug 18 16:34:49 UTC 2025
-Last refresh: Mon Aug 18 17:26:09 UTC 2025
-Last refresh: Mon Aug 18 17:46:25 UTC 2025
-Last refresh: Mon Aug 18 18:39:32 UTC 2025
-Last refresh: Mon Aug 18 19:22:20 UTC 2025
-Last refresh: Mon Aug 18 19:41:55 UTC 2025
-Last refresh: Mon Aug 18 20:26:58 UTC 2025
-Last refresh: Mon Aug 18 20:44:37 UTC 2025
-Last refresh: Mon Aug 18 21:22:46 UTC 2025
-Last refresh: Mon Aug 18 21:41:30 UTC 2025
-Last refresh: Mon Aug 18 22:23:19 UTC 2025
-Last refresh: Mon Aug 18 22:43:37 UTC 2025
-Last refresh: Mon Aug 18 23:23:52 UTC 2025
-Last refresh: Mon Aug 18 23:41:40 UTC 2025
-Last refresh: Tue Aug 19 02:03:34 UTC 2025
-Last refresh: Tue Aug 19 03:30:20 UTC 2025
-Last refresh: Tue Aug 19 04:30:22 UTC 2025
-Last refresh: Tue Aug 19 05:25:37 UTC 2025
-Last refresh: Tue Aug 19 05:44:23 UTC 2025
-Last refresh: Tue Aug 19 06:38:36 UTC 2025
-Last refresh: Tue Aug 19 07:24:42 UTC 2025
-Last refresh: Tue Aug 19 07:42:23 UTC 2025
-Last refresh: Tue Aug 19 08:34:28 UTC 2025
-Last refresh: Tue Aug 19 09:27:29 UTC 2025
-Last refresh: Tue Aug 19 09:45:41 UTC 2025
-Last refresh: Tue Aug 19 10:27:47 UTC 2025
-Last refresh: Tue Aug 19 10:47:36 UTC 2025
-Last refresh: Tue Aug 19 11:21:40 UTC 2025
-Last refresh: Tue Aug 19 11:41:05 UTC 2025
-Last refresh: Tue Aug 19 12:52:09 UTC 2025
-Last refresh: Tue Aug 19 13:34:44 UTC 2025
-Last refresh: Tue Aug 19 14:26:16 UTC 2025
-Last refresh: Tue Aug 19 14:47:15 UTC 2025
-Last refresh: Tue Aug 19 15:27:51 UTC 2025
-Last refresh: Tue Aug 19 15:45:35 UTC 2025
-Last refresh: Tue Aug 19 16:32:33 UTC 2025
-Last refresh: Tue Aug 19 17:22:42 UTC 2025
-Last refresh: Tue Aug 19 17:43:04 UTC 2025
