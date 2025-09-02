@@ -37,6 +37,11 @@ I'm a 23-year-old boy pursuing computer engineering student. I love learning ski
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
 
 
+## Certifications 🎓
+
+[![Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate](assets/oracle-ai-badge.png)](https://catalog-education.oracle.com/pls/certview/sharebadge?id=E86D19152FF6A6F0B40D14E4F4C0D86FFC18FF218D7D2E07FF4C4182ED468AC54)
+
+
 <h1 align="center"><b>Donation</b></h1>
 
 <p align="center">Greetings, fellow code geeks! I'm a programmer and coder student, and I'm not asking for your money - I want your support! For every donation you make, I promise to write one line of code while standing on one foot. It's a win-win - you get to help out a struggling student, and I get to improve my balance. So, let's code and balance our way to success!
