@@ -1,6 +1,6 @@
 <!--![MasterHead](https://raw.githubusercontent.com/kronpatel/kronpatel/main/Covers/GIF/01.gif)-->
 
-![Cover](Covers/GIF/07.gif)
+![Cover](Covers/JPG/04.jpg)
 
 <h1 align="center"><b>HELLO EVERYONE</b><img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35"></h1>
 
@@ -42,6 +42,15 @@ I'm a 23-year-old boy pursuing computer engineering student. I love learning ski
 [![Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate](assets/oracle-ai-badge.png)](https://catalog-education.oracle.com/pls/certview/sharebadge?id=E86D19152FF6A6F0B40D14E4F4C0D86FFC18FF218D7D2E07FF4C4182ED468AC54)
 
 
+<h1 align="left"> <img src="GIF's\02.gif" width="50"><b>: Connect With Me</b></h1>
+
+[![image](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/keron-patel-9a757a222/)
+[![image](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/kron_._18)
+[![image](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/keron_1826)
+[![image](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:keronpatel5656@gmail.com) 
+<br>
+<br>
+
 <h1 align="center"><b>Donation</b></h1>
 
 <p align="center">Greetings, fellow code geeks! I'm a programmer and coder student, and I'm not asking for your money - I want your support! For every donation you make, I promise to write one line of code while standing on one foot. It's a win-win - you get to help out a struggling student, and I get to improve my balance. So, let's code and balance our way to success!
@@ -54,14 +63,6 @@ I'm a 23-year-old boy pursuing computer engineering student. I love learning ski
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
 
 
-<h1 align="left"> <img src="GIF's\02.gif" width="50"><b>: Connect With Me</b></h1>
-
-[![image](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/keron-patel-9a757a222/)
-[![image](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/kron_._18)
-[![image](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/keron_1826)
-[![image](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:keronpatel5656@gmail.com) 
-<br>
-<br>
 <h1 align="left"> <img src="https://media0.giphy.com/media/cj87CxfRtrUifF3Ryk/giphy.gif?cid=ecf05e47lx1thg8e61tjqfpr4zemby622so2pa1j3sqcsbxp&ep=v1_stickers_search&rid=giphy.gif&ct=s" width="25"><b>: Github Stats <b> </h1>
 
 <div align="left">
