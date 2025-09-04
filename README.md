@@ -39,7 +39,7 @@ I'm a 23-year-old boy pursuing computer engineering student. I love learning ski
 
 ## Certifications 🎓
 
-[![Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate](assets/oracle-ai-badge.png)](https://catalog-education.oracle.com/pls/certview/sharebadge?id=E86D19152FF6A6F0B40D14E4F4C0D86FFC18FF218D7D2E07FF4C4182ED468AC54)
+[![Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate](assets/oracle-ai-badge.png)](https://catalog-education.oracle.com/pls/certview/sharebadge?id=E86D19152FF6A6F0B40D14E4F4C0D86FFC18FF218D7D2E07FF4C4182ED468AC54) [![Oracle Cloud Certification](assets/oracle-cert-badge.png)](https://catalog-education.oracle.com/pls/certview/sharebadge?id=3EADB4752F8B43E2706F92E9D2D9FAAB328130F54F1D632768E799D8B8FF83C9)
 
 
 <h1 align="left"> <img src="GIF's\02.gif" width="50"><b>: Connect With Me</b></h1>
