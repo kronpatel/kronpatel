@@ -2,59 +2,65 @@ name: Update Random Cover
 
 on:
   schedule:
-    - cron: "*/5 * * * *"   # every 5 min
+    - cron: "*/5 * * * *"   # Har 5 minute me chalega
   workflow_dispatch:
 
+# Ye permission bohot zaroori hai push karne ke liye!
 permissions:
   contents: write
 
 jobs:
   update-cover:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # Force push aur amend ke liye zaroori
 
-      - name: Pick next shuffled file
+      - name: Pick random unique file
         id: random
         run: |
-          echo "🔍 Searching in Covers/GIF, Covers/PNG, Covers/JPG..."
-          files=()
-          files+=($(find Covers/GIF -type f -iname "*.gif"))
-          files+=($(find Covers/PNG -type f -iname "*.png"))
-          files+=($(find Covers/JPG -type f -iname "*.jpg"))
+          # Covers folder se saari images dhoondho
+          files=($(find Covers -type f \( -iname "*.jpg" -o -iname "*.png" -o -iname "*.gif" \)))
+          
+          # Agar .used_covers nahi hai toh banao
+          touch .used_covers
+          used=($(cat .used_covers))
 
-          # If no files found
-          if [ ${#files[@]} -eq 0 ]; then
-            echo "❌ No cover files found!"
-            exit 1
+          available=()
+          for f in "${files[@]}"; do
+            if [[ ! " ${used[*]} " =~ " ${f} " ]]; then
+              available+=("$f")
+            fi
+          done
+
+          # Agar saari images use ho gayi hain, toh list reset kar do
+          if [ ${#available[@]} -eq 0 ]; then
+            echo "All files used, resetting used list."
+            > .used_covers
+            available=("${files[@]}")
           fi
 
-          # If shuffled list doesn't exist OR is empty → make new shuffle
-          if [ ! -f .cover_queue ] || [ ! -s .cover_queue ]; then
-            echo "♻️ Creating a new shuffled list"
-            printf "%s\n" "${files[@]}" | shuf > .cover_queue
-          fi
+          # Bachi hui images me se random uthao
+          random_file=${available[$RANDOM % ${#available[@]}]}
 
-          # Pick first line as current file
-          random_file=$(head -n 1 .cover_queue)
-          # Remove first line from queue
-          tail -n +2 .cover_queue > .cover_queue.tmp && mv .cover_queue.tmp .cover_queue
+          # Nayi image ko used list me daalo
+          echo "${used[@]} $random_file" | tr ' ' '\n' > .used_covers
 
-          echo "✅ Selected: $random_file"
           echo "file=$random_file" >> $GITHUB_OUTPUT
 
       - name: Update README
         run: |
-          random_file="${{ steps.random.outputs.file }}"
-          # Replace line containing "![Cover](" with new image path
-          sed -i "s|!\[Cover\](.*)|![Cover]($random_file)|" README.md
+          # README me image update karo
+          sed -i "s|^!\[MasterHead\](.*)|![MasterHead](https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/main/${{ steps.random.outputs.file }})|" README.md
 
-      - name: Commit and Push
+      - name: Commit and Force Push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add README.md .cover_queue
-          git commit -m "🔄 Update random cover [skip ci]" || echo "⚠️ No changes"
-          git push
+          git add README.md .used_covers
+          
+          # Purane commit ko overwrite karega taaki history clean rahe
+          git commit -m "chore: update random cover [skip ci]" --amend || true
+          git push origin main --force
