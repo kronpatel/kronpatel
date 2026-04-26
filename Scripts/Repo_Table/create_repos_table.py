@@ -1,48 +1,43 @@
+import os
 import requests
 
 def fetch_repos():
     username = "kronpatel"
     url = f"https://api.github.com/users/{username}/repos"
-    
-    # Bina kisi secret token ke direct request (Kyunki public data hai)
     response = requests.get(url)
-    
     if response.status_code == 200:
         return [repo for repo in response.json() if not repo['fork'] and repo['private'] == False]
-    else:
-        print(f"Error fetching repos: {response.status_code}")
-        return []
+    return []
 
 def generate_markdown_table(repos):
-    markdown_table = "| Name | Description | URL |\n|------|-------------|-----|\n"
+    table = "| Name | Description | URL |\n|------|-------------|-----|\n"
     for repo in repos:
         desc = repo.get('description') or 'No description'
-        desc = str(desc).replace("|", "-").replace("\n", " ") 
-        markdown_table += f"| {repo['name']} | {desc} | [Link]({repo['html_url']}) |\n"
-    return markdown_table
+        table += f"| **{repo['name']}** | {desc} | [Link]({repo['html_url']}) |\n"
+    return table
 
-def update_readme(table):
-    readme_path = "README.md"
-    try:
-        with open(readme_path, "r", encoding="utf-8") as file:
-            content = file.read()
+def update_readme(table_content):
+    file_path = "README.md"
+    with open(file_path, "r", encoding="utf-8") as f:
+        content = f.read()
 
-        # Is baar hum thoda flexible search kar rahe hain
-        start_marker = ""
-        end_marker = ""
+    start_tag = ""
+    end_tag = ""
+
+    if start_tag in content and end_tag in content:
+        # Purani table hatakar nayi table fit karna
+        before = content.split(start_tag)[0]
+        after = content.split(end_tag)[1]
+        new_content = before + start_tag + "\n\n" + table_content + "\n\n" + end_tag + after
         
-        if start_marker in content and end_marker in content:
-            parts = content.split(start_marker)
-            first_half = parts[0] + start_marker
-            second_half = parts[1].split(end_marker)[1]
-            
-            new_content = first_half + "\n\n" + table + "\n" + end_marker + second_half
-            
-            with open(readme_path, "w", encoding="utf-8") as file:
-                file.write(new_content)
-            print("SUCCESS: Table generated perfectly!")
-        else:
-            print("ERROR: Hidden tags missing! Check README for ")
+        with open(file_path, "w", encoding="utf-8") as f:
+            f.write(new_content)
+        print("Success: Table updated!")
+    else:
+        print("Error: Tags not found in README!")
 
-    except Exception as e:
-        print(f"ERROR: {e}")
+if __name__ == "__main__":
+    repos = fetch_repos()
+    if repos:
+        markdown_table = generate_markdown_table(repos)
+        update_readme(markdown_table)
