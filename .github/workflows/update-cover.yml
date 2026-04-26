@@ -5,7 +5,6 @@ on:
     - cron: "*/5 * * * *"   # Har 5 minute me chalega
   workflow_dispatch:
 
-# Ye permission bohot zaroori hai push karne ke liye!
 permissions:
   contents: write
 
@@ -16,52 +15,41 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # Force push aur amend ke liye zaroori
+          fetch-depth: 0
 
       - name: Pick random unique file
         id: random
         run: |
-          # Covers folder se saari images dhoondho
           files=($(find Covers -type f \( -iname "*.jpg" -o -iname "*.png" -o -iname "*.gif" \)))
-          
-          # Agar .used_covers nahi hai toh banao
           touch .used_covers
           used=($(cat .used_covers))
-
           available=()
           for f in "${files[@]}"; do
             if [[ ! " ${used[*]} " =~ " ${f} " ]]; then
               available+=("$f")
             fi
           done
-
-          # Agar saari images use ho gayi hain, toh list reset kar do
           if [ ${#available[@]} -eq 0 ]; then
-            echo "All files used, resetting used list."
             > .used_covers
             available=("${files[@]}")
           fi
-
-          # Bachi hui images me se random uthao
           random_file=${available[$RANDOM % ${#available[@]}]}
-
-          # Nayi image ko used list me daalo
           echo "${used[@]} $random_file" | tr ' ' '\n' > .used_covers
-
           echo "file=$random_file" >> $GITHUB_OUTPUT
 
       - name: Update README
         run: |
-          # README me image update karo
           sed -i "s|^!\[MasterHead\](.*)|![MasterHead](https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/main/${{ steps.random.outputs.file }})|" README.md
 
-      - name: Commit and Push
+      - name: Commit and Push Safely
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add README.md .used_covers
-          git commit -m "chore: update random cover [skip ci]" || echo "No changes"
           
-          # Ye command push karne se pehle check karegi ki koi aur bot kaam toh nahi kar raha
-          git pull --rebase origin main 
+          # Ye command ensure karegi ki dono bot aapas me na ladein
+          git pull origin main --rebase
+          
+          git add README.md .used_covers
+          # Yahan se humne '--amend' aur '--force' hata diya hai taaki file delete na ho!
+          git commit -m "chore: update random cover [skip ci]" || echo "No changes"
           git push origin main
