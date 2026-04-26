@@ -2,8 +2,8 @@ name: Update Random Cover
 
 on:
   schedule:
-    - cron: "*/5 * * * *"   # Har 5 minute mein chalega
-  workflow_dispatch:        # Manual run ke liye
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -39,7 +39,6 @@ jobs:
 
       - name: Update README
         run: |
-          # Banner update logic
           sed -i "s|^!\[MasterHead\](.*)|![MasterHead](https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/main/${{ steps.random.outputs.file }})|" README.md
 
       - name: Commit and Push Safely
@@ -47,12 +46,16 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           
-          # Pehle changes ko add/stage karo, fir pull karo (Error solution)
-          git add README.md .used_covers
+          # 1. Purane kisi bhi uncommitted change ko saaf karo
+          git reset --hard
           
-          # Pull changes before pushing
+          # 2. Latest changes pull karo
           git pull origin main --rebase
           
-          # Ab commit aur push karo
+          # 3. Fir se README update karo (kyunki reset ne purana change mita diya hoga)
+          sed -i "s|^!\[MasterHead\](.*)|![MasterHead](https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/main/${{ steps.random.outputs.file }})|" README.md
+          
+          # 4. Ab safely commit aur push karo
+          git add README.md .used_covers
           git commit -m "chore: update random cover [skip ci]" || echo "No changes to commit"
           git push origin main
