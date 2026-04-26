@@ -6,7 +6,7 @@
 
 I'm a 23-year-old boy pursuing computer engineering student. I love learning skills :)
 <img width="20%" align="right" src="GIF's/01.gif" />
-- � I’m currently working on  Automation 
+- � I’m currently working on Automation
 - � I’m currently exploring Machine Learning
 - � I’m looking for a good project
 - � Pronouns: He/Him
