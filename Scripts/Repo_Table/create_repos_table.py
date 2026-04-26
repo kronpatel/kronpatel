@@ -1,6 +1,5 @@
 import os
 import requests
-import re
 
 def fetch_repos():
     username = "kronpatel"
@@ -21,7 +20,8 @@ def generate_markdown_table(repos):
     markdown_table = "| Name | Description | URL |\n|------|-------------|-----|\n"
     for repo in repos:
         desc = repo['description'] if repo['description'] else 'No description'
-        desc = desc.replace("|", "-") # Markdown error fix
+        # Ye line kisi bhi error ko rokti hai
+        desc = str(desc).replace("|", "-").replace("\n", " ") 
         markdown_table += f"| {repo['name']} | {desc} | [Link]({repo['html_url']}) |\n"
     return markdown_table
 
@@ -31,17 +31,23 @@ def update_readme(table):
         with open(readme_path, "r", encoding="utf-8") as file:
             content = file.read()
 
-        # Ye Regex logic table ko humesha correct jagah rakhega aur duplicate nahi hone dega
-        pattern = r"().*?()"
-        replacement = r"\1\n\n" + table + r"\n\2"
+        start_marker = ""
+        end_marker = ""
         
-        if re.search(pattern, content, re.DOTALL):
-            new_content = re.sub(pattern, replacement, content, flags=re.DOTALL)
+        start_idx = content.find(start_marker)
+        end_idx = content.find(end_marker)
+
+        if start_idx != -1 and end_idx != -1 and start_idx < end_idx:
+            # Ye naya logic file ko kabhi corrupt nahi hone dega
+            before_table = content[:start_idx + len(start_marker)]
+            after_table = content[end_idx:]
+            new_content = before_table + "\n\n" + table + "\n" + after_table
+            
             with open(readme_path, "w", encoding="utf-8") as file:
                 file.write(new_content)
             print("README.md updated successfully.")
         else:
-            print("Error: Tags and not found!")
+            print("Error: Markers not found correctly in README.md")
 
     except Exception as e:
         print(f"Error updating README.md: {e}")
