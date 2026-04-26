@@ -5,22 +5,22 @@
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=25&duration=2000&pause=1000&width=435&lines=Keron+Patel;I+am+a+Coder;Ai+%7C+Web-Design+%7C+Automation)](https://git.io/typing-svg)
 
 I'm a 23-year-old boy pursuing computer engineering student. I love learning skills :)
-<img width="20%" align="right" src="GIF's\01.gif" />
-- 🔭 I’m currently working on  Automation 
-- 🌱 I’m currently exploring Machine Learning
-- 🤔 I’m looking for a good project
-- 😄 Pronouns: He/Him
-- 😎 I love Video games 🎮 and Listening Songs ♟️ in my spare time.
+<img width="20%" align="right" src="GIF's/01.gif" />
+- � I’m currently working on  Automation 
+- � I’m currently exploring Machine Learning
+- � I’m looking for a good project
+- � Pronouns: He/Him
+- � I love Video games � and Listening Songs ♟️ in my spare time.
 
 <br>
-<h1 align="left"> <img src="GIF's\01.gif" width="30"> <b>: Fun Fact</b> </h1>
+<h1 align="left"> <img src="GIF's/01.gif" width="30"> <b>: Fun Fact</b> </h1>
 <p> Well, hello there! I'm a 23-year-old white hate hacker, which means I'm like a superhero, but instead of saving the world, I just enjoy causing chaos on the internet (just kidding... maybe).<br><br>When I'm not busy hacking into secure systems, you can usually find me binge-watching my favorite TV shows or playing video games until the wee hours of the morning. Some people call me a computer genius, but I prefer to think of myself as a professional troublemaker.<br><br>My parents always told me to use my powers for good, but let's be real, what's the fun in that? So, instead, I use my skills to prank my friends and family. Just don't tell the CBI, okay?<br><br></p>
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 [![An image of @kronpatel's Holopin badges, which is a link to view their full Holopin profile](https://holopin.me/kronpatel)](https://holopin.io/@kronpatel)
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
-
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 <h1 align="left"> <img src="https://i.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.webp" width="30"> <b>: Skill & Tools</b> </h1>
   <p align="center">
@@ -32,10 +32,10 @@ I'm a 23-year-old boy pursuing computer engineering student. I love learning ski
 
 <br>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 
-## Certifications 🎓
+## Certifications �
 
 <table>
   <tr>
@@ -52,10 +52,7 @@ I'm a 23-year-old boy pursuing computer engineering student. I love learning ski
   </tr>
 </table>
 
-
-
-
-<h1 align="left"> <img src="GIF's\02.gif" width="50"><b>: Connect With Me</b></h1>
+<h1 align="left"> <img src="GIF's/02.gif" width="50"><b>: Connect With Me</b></h1>
 
 [![image](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/keron-patel-9a757a222/)
 [![image](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/kron18__)
@@ -73,10 +70,9 @@ I'm a 23-year-old boy pursuing computer engineering student. I love learning ski
 <a href="https://www.buymeacoffee.com/keronpatel" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" width="150"></a>
 </div>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
-
-<h1 align="left"> <img src="https://media0.giphy.com/media/cj87CxfRtrUifF3Ryk/giphy.gif?cid=ecf05e47lx1thg8e61tjqfpr4zemby622so2pa1j3sqcsbxp&ep=v1_stickers_search&rid=giphy.gif&ct=s" width="25"><b>: Github Stats <b> </h1>
+<h1 align="left"> <img src="https://media0.giphy.com/media/cj87CxfRtrUifF3Ryk/giphy.gif?cid=ecf05e47lx1thg8e61tjqfpr4zemby622so2pa1j3sqcsbxp&ep=v1_stickers_search&rid=giphy.gif&ct=s" width="25"><b>: Github Stats </b> </h1>
 
 <div align="left">
   <img src="https://github-readme-stats.vercel.app/api?username=kronpatel&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=tokyonight&locale=en&hide_border=true&order=1" height="150" alt="stats graph"  />
@@ -86,10 +82,10 @@ I'm a 23-year-old boy pursuing computer engineering student. I love learning ski
 <br>
 <br>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 <h3 align="center">
   <img src="https://emoji.discord.st/emojis/768b108d-274f-4f44-a634-8477b16efce7.gif" width="25">
-  &nbsp;<b> Thanks for exploring my digital home on GitHub!<b> &nbsp;
+  &nbsp;<b> Thanks for exploring my digital home on GitHub!</b> &nbsp;
   <img src="https://emoji.discord.st/emojis/768b108d-274f-4f44-a634-8477b16efce7.gif" width="25">
 </h3>
