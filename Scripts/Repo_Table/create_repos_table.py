@@ -27,30 +27,22 @@ def update_readme(table):
         with open(readme_path, "r", encoding="utf-8") as file:
             content = file.read()
 
+        # Is baar hum thoda flexible search kar rahe hain
         start_marker = ""
         end_marker = ""
         
-        start_idx = content.find(start_marker)
-        end_idx = content.find(end_marker)
-
-        if start_idx != -1 and end_idx != -1 and start_idx < end_idx:
-            before_table = content[:start_idx + len(start_marker)]
-            after_table = content[end_idx:]
-            new_content = before_table + "\n\n" + table + "\n" + after_table
+        if start_marker in content and end_marker in content:
+            parts = content.split(start_marker)
+            first_half = parts[0] + start_marker
+            second_half = parts[1].split(end_marker)[1]
+            
+            new_content = first_half + "\n\n" + table + "\n" + end_marker + second_half
             
             with open(readme_path, "w", encoding="utf-8") as file:
                 file.write(new_content)
-            print("SUCCESS: Table perfectly generated!")
+            print("SUCCESS: Table generated perfectly!")
         else:
-            print("ERROR: README me hidden tags nahi mile!")
+            print("ERROR: Hidden tags missing! Check README for ")
 
     except Exception as e:
         print(f"ERROR: {e}")
-
-if __name__ == "__main__":
-    repos = fetch_repos()
-    if repos:
-        table = generate_markdown_table(repos)
-        update_readme(table)
-    else:
-        print("ERROR: Koi repository nahi mili ya net issue!")
