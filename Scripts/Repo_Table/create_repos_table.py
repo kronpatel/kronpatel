@@ -1,11 +1,11 @@
 import requests
+import re
 
 def fetch_repos():
     username = "kronpatel"
     url = f"https://api.github.com/users/{username}/repos"
     response = requests.get(url)
     if response.status_code == 200:
-        # Only public and non-forked repos
         return [repo for repo in response.json() if not repo['fork'] and not repo['private']]
     return []
 
@@ -25,17 +25,14 @@ def update_readme(table_content):
         content = f.read()
 
     if start_tag in content and end_tag in content:
-        # Purani table ko dhoondh kar replace karna (Zero-Error Logic)
-        import re
-        pattern = f"{start_tag}.*?{end_tag}"
+        pattern = f"{re.escape(start_tag)}.*?{re.escape(end_tag)}"
         replacement = f"{start_tag}\n\n{table_content}\n\n{end_tag}"
         new_content = re.sub(pattern, replacement, content, flags=re.DOTALL)
-
         with open(file_path, "w", encoding="utf-8") as f:
             f.write(new_content)
         print("Success: Table updated!")
     else:
-        print("Error: Markers not found! Make sure they are in README.")
+        print("Error: Markers not found!")
 
 if __name__ == "__main__":
     repos = fetch_repos()
