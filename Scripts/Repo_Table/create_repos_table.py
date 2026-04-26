@@ -20,24 +20,21 @@ def update_readme(table_content):
     with open(file_path, "r", encoding="utf-8") as f:
         content = f.read()
 
-    start_tag = ""
-    end_tag = ""
-
-    # Agar tags milte hain toh unke beech table daalo
-    if start_tag in content and end_tag in content:
-        start_parts = content.split(start_tag)
-        before_tag = start_parts[0]
-        after_tag_part = start_parts[1].split(end_tag)[1]
+    # Direct strings use kar rahe hain bina kisi variable ke
+    if "" in content and "" in content:
+        # Split logic ko ekdum simple rakha hai
+        before = content.split("")[0]
+        after = content.split("")[1]
         
-        new_content = before_tag + start_tag + "\n\n" + table_content + "\n\n" + end_tag + after_tag_part
+        new_content = before + "\n\n" + table_content + "\n\n" + after
         
         with open(file_path, "w", encoding="utf-8") as f:
             f.write(new_content)
-        print("Success: Table updated!")
+        print("Success: README updated with table!")
     else:
-        # Agar tags nahi mile, toh file ke end mein tags ke saath table chipka do
-        print("Tags not found, appending to the end of file...")
-        new_content = content + f"\n\n{start_tag}\n\n{table_content}\n\n{end_tag}"
+        # Agar tags nahi mile toh safe side ke liye end mein append kar dega
+        print("Markers not found, appending to end...")
+        new_content = content + "\n\n\n\n" + table_content + "\n\n"
         with open(file_path, "w", encoding="utf-8") as f:
             f.write(new_content)
 
