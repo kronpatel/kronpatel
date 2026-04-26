@@ -2,8 +2,8 @@ name: Update Random Cover
 
 on:
   schedule:
-    - cron: "*/5 * * * *"   # Har 5 minute me chalega
-  workflow_dispatch:
+    - cron: "*/5 * * * *"   # Har 5 minute mein chalega
+  workflow_dispatch:        # Manual run ke liye
 
 permissions:
   contents: write
@@ -39,6 +39,7 @@ jobs:
 
       - name: Update README
         run: |
+          # Banner update logic
           sed -i "s|^!\[MasterHead\](.*)|![MasterHead](https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/main/${{ steps.random.outputs.file }})|" README.md
 
       - name: Commit and Push Safely
@@ -46,10 +47,12 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           
-          # Ye command ensure karegi ki dono bot aapas me na ladein
+          # Pehle changes ko add/stage karo, fir pull karo (Error solution)
+          git add README.md .used_covers
+          
+          # Pull changes before pushing
           git pull origin main --rebase
           
-          git add README.md .used_covers
-          # Yahan se humne '--amend' aur '--force' hata diya hai taaki file delete na ho!
-          git commit -m "chore: update random cover [skip ci]" || echo "No changes"
+          # Ab commit aur push karo
+          git commit -m "chore: update random cover [skip ci]" || echo "No changes to commit"
           git push origin main
