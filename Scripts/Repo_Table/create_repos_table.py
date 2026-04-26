@@ -1,4 +1,3 @@
-import os
 import requests
 
 def fetch_repos():
@@ -24,17 +23,23 @@ def update_readme(table_content):
     start_tag = ""
     end_tag = ""
 
+    # Agar tags milte hain toh unke beech table daalo
     if start_tag in content and end_tag in content:
-        # Purani table hatakar nayi table fit karna
-        before = content.split(start_tag)[0]
-        after = content.split(end_tag)[1]
-        new_content = before + start_tag + "\n\n" + table_content + "\n\n" + end_tag + after
+        start_parts = content.split(start_tag)
+        before_tag = start_parts[0]
+        after_tag_part = start_parts[1].split(end_tag)[1]
+        
+        new_content = before_tag + start_tag + "\n\n" + table_content + "\n\n" + end_tag + after_tag_part
         
         with open(file_path, "w", encoding="utf-8") as f:
             f.write(new_content)
         print("Success: Table updated!")
     else:
-        print("Error: Tags not found in README!")
+        # Agar tags nahi mile, toh file ke end mein tags ke saath table chipka do
+        print("Tags not found, appending to the end of file...")
+        new_content = content + f"\n\n{start_tag}\n\n{table_content}\n\n{end_tag}"
+        with open(file_path, "w", encoding="utf-8") as f:
+            f.write(new_content)
 
 if __name__ == "__main__":
     repos = fetch_repos()
