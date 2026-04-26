@@ -19,6 +19,25 @@
 | Whatsapp-unlimited-sms | No description | [Link](https://github.com/kronpatel/Whatsapp-unlimited-sms) |
 
 
+
+| Name | Description | URL |
+|------|-------------|-----|
+| Advance-Tab-Saver |  Advance Tab Saver is a simple and efficient Chrome extension that helps you save, organize, and restore your browser tabs easily. It’s designed to boost productivity by preventing tab clutter and letting you quickly reopen saved sessions with just a click. | [Link](https://github.com/kronpatel/Advance-Tab-Saver) |
+| Gallery-For-Blogger-Website | No description | [Link](https://github.com/kronpatel/Gallery-For-Blogger-Website) |
+| google-chrome-Extensions | No description | [Link](https://github.com/kronpatel/google-chrome-Extensions) |
+| image-slice-effect-main | No description | [Link](https://github.com/kronpatel/image-slice-effect-main) |
+| Instagram-Quotes-Maker | Python code to create custom quote images with background, text, and color options using PIL | [Link](https://github.com/kronpatel/Instagram-Quotes-Maker) |
+| jokesGenerator | No description | [Link](https://github.com/kronpatel/jokesGenerator) |
+| KERZOX_Gif_Profiles | No description | [Link](https://github.com/kronpatel/KERZOX_Gif_Profiles) |
+| kronpatel | No description | [Link](https://github.com/kronpatel/kronpatel) |
+| Preloader | No description | [Link](https://github.com/kronpatel/Preloader) |
+| Privacy-Protector-extension | No description | [Link](https://github.com/kronpatel/Privacy-Protector-extension) |
+| Screenshot-Tool-Extensions | No description | [Link](https://github.com/kronpatel/Screenshot-Tool-Extensions) |
+| SnakeGame | No description | [Link](https://github.com/kronpatel/SnakeGame) |
+| social-media-links | No description | [Link](https://github.com/kronpatel/social-media-links) |
+| Whatsapp-unlimited-sms | No description | [Link](https://github.com/kronpatel/Whatsapp-unlimited-sms) |
+
+
 <h1 align="center"><b>HELLO EVERYONE</b><img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35"></h1>
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=25&duration=2000&pause=1000&width=435&lines=Keron+Patel;I+am+a+Coder;Ai+%7C+Web-Design+%7C+Automation)](https://git.io/typing-svg)
