@@ -1,5 +1,4 @@
 import requests
-import re
 
 def fetch_repos():
     username = "kronpatel"
@@ -25,12 +24,16 @@ def update_readme(table_content):
         content = f.read()
 
     if start_tag in content and end_tag in content:
-        pattern = f"{re.escape(start_tag)}.*?{re.escape(end_tag)}"
-        replacement = f"{start_tag}\n\n{table_content}\n\n{end_tag}"
-        new_content = re.sub(pattern, replacement, content, flags=re.DOTALL)
+        # Puraani duplicate tables hatakar ek fresh table set karna
+        parts = content.split(start_tag)
+        before = parts[0]
+        after = parts[1].split(end_tag)[-1] # Sirf aakhiri part lena
+        
+        new_content = before + start_tag + "\n\n" + table_content + "\n\n" + end_tag + after
+        
         with open(file_path, "w", encoding="utf-8") as f:
             f.write(new_content)
-        print("Success: Table updated!")
+        print("Success: README cleaned and table updated!")
     else:
         print("Error: Markers not found!")
 
