@@ -5,7 +5,7 @@ def fetch_repos():
     url = f"https://api.github.com/users/{username}/repos"
     response = requests.get(url)
     if response.status_code == 200:
-        return [repo for repo in response.json() if not repo['fork'] and repo['private'] == False]
+        return [repo for repo in response.json() if not repo['fork'] and not repo['private']]
     return []
 
 def generate_markdown_table(repos):
@@ -17,26 +17,25 @@ def generate_markdown_table(repos):
 
 def update_readme(table_content):
     file_path = "README.md"
+    start_marker = ""
+    end_marker = ""
+
     with open(file_path, "r", encoding="utf-8") as f:
         content = f.read()
 
-    # Direct strings use kar rahe hain bina kisi variable ke
-    if "" in content and "" in content:
-        # Split logic ko ekdum simple rakha hai
-        before = content.split("")[0]
-        after = content.split("")[1]
+    if start_marker in content and end_marker in content:
+        # Markers ke beech ka hissa replace karna
+        parts = content.split(start_marker)
+        before = parts[0]
+        after = parts[1].split(end_marker)[1]
         
-        new_content = before + "\n\n" + table_content + "\n\n" + after
+        new_content = before + start_marker + "\n\n" + table_content + "\n\n" + end_marker + after
         
         with open(file_path, "w", encoding="utf-8") as f:
             f.write(new_content)
-        print("Success: README updated with table!")
+        print("Success: Table updated!")
     else:
-        # Agar tags nahi mile toh safe side ke liye end mein append kar dega
-        print("Markers not found, appending to end...")
-        new_content = content + "\n\n\n\n" + table_content + "\n\n"
-        with open(file_path, "w", encoding="utf-8") as f:
-            f.write(new_content)
+        print("Error: Markers not found!")
 
 if __name__ == "__main__":
     repos = fetch_repos()
