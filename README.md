@@ -23,13 +23,6 @@ I'm a 23-year-old boy pursuing computer engineering student. I love learning ski
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 <h1 align="left"> <img src="https://i.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.webp" width="30"> <b>: Skill & Tools</b> </h1>
-<br>
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-
-<h1 align="left"> <img src="https://media0.giphy.com/media/L1R1tvI9svkIWwpVYr/giphy.gif" width="35"> <b>: My Repositories</b> </h1>
-
-<br>
   <p align="center">
   <img src="https://skillicons.dev/icons?i=py,js,html,css,bash,r,react,solidity,ts" />
   <img src="https://skillicons.dev/icons?i=nextjs,nodejs" />
@@ -38,6 +31,11 @@ I'm a 23-year-old boy pursuing computer engineering student. I love learning ski
   </p>
 
 <br>
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
+<h1 align="left"> <img src="https://media0.giphy.com/media/L1R1tvI9svkIWwpVYr/giphy.gif" width="35"> <b>: My Repositories</b> </h1>
+
 <br>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
