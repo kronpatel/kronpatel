@@ -1,41 +1,75 @@
-<!--![MasterHead](https://raw.githubusercontent.com/kronpatel/kronpatel/main/Covers/GIF/01.gif)-->
-
 ![Cover](https://raw.githubusercontent.com/kronpatel/kronpatel/main/Covers/PNG/03.png)
 
 <h1 align="center"><b>HELLO EVERYONE</b><img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35"></h1>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=25&duration=2000&pause=1000&width=435&lines=Keron+Patel;I+am+a+Coder;Ai+%7C+Web-Design+%7C+Automation)](https://git.io/typing-svg)
-
-I'm a 23-year-old boy pursuing computer engineering student. I love learning skills :)
-<img width="20%" align="right" src="GIF's\01.gif" />
-- 🔭 I’m currently working on  Automation 
-- 🌱 I’m currently exploring Machine Learning
-- 🤔 I’m looking for a good project
-- 😄 Pronouns: He/Him
-- 😎 I love Video games 🎮 and Listening Songs ♟️ in my spare time.
+<div align="center">
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=25&duration=2000&pause=1000&width=435&lines=Keron+Patel;I+am+a+Coder;Ai+%7C+Web-Design+%7C+Automation" alt="Typing SVG" />
+  </a>
+</div>
 
 <br>
-<h1 align="left"> <img src="GIF's\01.gif" width="30"> <b>: Fun Fact</b> </h1>
-<p> Well, hello there! I'm a 20-year-old white hate hacker, which means I'm like a superhero, but instead of saving the world, I just enjoy causing chaos on the internet (just kidding... maybe).<br><br>When I'm not busy hacking into secure systems, you can usually find me binge-watching my favorite TV shows or playing video games until the wee hours of the morning. Some people call me a computer genius, but I prefer to think of myself as a professional troublemaker.<br><br>My parents always told me to use my powers for good, but let's be real, what's the fun in that? So, instead, I use my skills to prank my friends and family. Just don't tell the CBI, okay?<br><br></p>
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
 
-[![An image of @kronpatel's Holopin badges, which is a link to view their full Holopin profile](https://holopin.me/kronpatel)](https://holopin.io/@kronpatel)
+<h3>Hey, I'm Keron! ⚡</h3>
+<img width="20%" align="right" src="GIF's/01.gif" alt="Hacker GIF" />
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
+<p>A 24-year-old Computer Engineering undergrad turning coffee into code and manual tasks into automated magic.</p>
 
+- 🔭 **Focusing on:** Building seamless Automation tools
+- 🌱 **Diving deep into:** Machine Learning and data models 🤖
+- 🤝 **Open for:** Exciting new projects—let's build something awesome together!
+- 😄 **Pronouns:** He/Him
+- 🕹️ **When I'm not coding:** I'm either lost in an intense video game session 🎮 or chilling with a great playlist 🎧.
+
+<br>
+
+<h1 align="left"> <img src="GIF's/01.gif" width="30"> <b>: Fun Fact</b> </h1>
+<p>
+When I'm not studying computer engineering or automating boring tasks out of existence, I'm probably tweaking my home server containers or trying to click heads in Valorant. I firmly believe that any problem can be solved with a bit of Python, some machine learning magic, or just turning it off and on again. Some call me an engineering student, but I prefer the title "Digital Architect in Training." 🚀
+</p>
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
+<br>
+
+<div align="center">
+  <h2>🎮 Gaming & Chill Zone 🎧</h2>
+  <p><i>Warning: Do not disturb during a clutch round or a good drop.</i></p>
+
+  <a href="https://tracker.gg/valorant/profile/riot/KERZOX%23RIYO/overview" target="_blank">
+    <img src="https://img.shields.io/badge/Valorant-KERZOX-ff4655?style=for-the-badge&logo=valorant&logoColor=white" alt="Valorant Profile"/>
+  </a>
+  
+  <img src="https://img.shields.io/badge/Status-AFK_or_Grinding-1a1a1a?style=for-the-badge&logo=riotgames&logoColor=white" alt="Gaming Status"/>
+
+  <br><br>
+
+  <a href="https://open.spotify.com/user/32n26q7w3ndj4pbeog07k2yqy" target="_blank">
+    <img src="https://spotify-github-profile.vercel.app/api/view?uid=32n26q7w3ndj4pbeog07k2yqy&cover_image=true&theme=dark&show_offline=true" width="450" alt="Spotify Currently Playing" />
+  </a>
+  </div>
+
+<br>
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
+<br>
 
 <h1 align="left"> <img src="https://i.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.webp" width="30"> <b>: Skill & Tools</b> </h1>
-  <p align="center">
-  <img src="https://skillicons.dev/icons?i=py,js,html,css,bash,r,react,solidity,ts" />
-  <img src="https://skillicons.dev/icons?i=nextjs,nodejs" />
-  <img src="https://skillicons.dev/icons?i=git,github,linux,mongodb,mysql,postgres,raspberrypi" />
-  <img src="https://skillicons.dev/icons?i=ps,bootstrap" />
-  </p>
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=py,js,html,css,bash,r,react,solidity,ts,nextjs,nodejs,git,github,linux,mongodb,mysql,postgres,raspberrypi,ps,bootstrap" />
+</p>
 
 <br>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
+<h1 align="left"> <img src="https://media0.giphy.com/media/cj87CxfRtrUifF3Ryk/giphy.gif" width="25"> <b>: Github Stats</b> </h1>
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=kronpatel&show_icons=true&theme=tokyonight&count_private=true&hide_border=true&bg_color=0D1117" alt="Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kronpatel&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="Top Langs" />
+  <img src="https://streak-stats.demolab.com/?user=kronpatel&theme=tokyonight&hide_border=true&background=0D1117" alt="Streak" />
+</div>
 
+<br>
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 ## Certifications 🎓
 
@@ -54,44 +88,33 @@ I'm a 23-year-old boy pursuing computer engineering student. I love learning ski
   </tr>
 </table>
 
-
-
-
-<h1 align="left"> <img src="GIF's\02.gif" width="50"><b>: Connect With Me</b></h1>
-
-[![image](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/keron-patel-9a757a222/)
-[![image](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/kron18__)
-[![image](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/keron_1826)
-[![image](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:keronpatel5656@gmail.com) 
 <br>
+
+<h1 align="left"> <img src="GIF's/02.gif" width="50"><b>: Connect With Me</b></h1>
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/keron-patel-9a757a222/)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/kron18__)
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/keron_1826)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:keronpatel5656@gmail.com)
+
 <br>
 
 <h1 align="center"><b>Donation</b></h1>
-
-<p align="center">Greetings, fellow code geeks! I'm a programmer and coder student, and I'm not asking for your money - I want your support! For every donation you make, I promise to write one line of code while standing on one foot. It's a win-win - you get to help out a struggling student, and I get to improve my balance. So, let's code and balance our way to success!
+<p align="center">
+Greetings, fellow code geeks! I'm a programmer and coder student. For every donation you make, I promise to write one line of code while standing on one foot. Let's code and balance our way to success!
 </p>
 
 <div align="center">
-<a href="https://www.buymeacoffee.com/keronpatel" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" width="150"></a>
+  <a href="https://www.buymeacoffee.com/keronpatel" target="_blank">
+    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" width="150">
+  </a>
 </div>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
-
-
-<h1 align="left"> <img src="https://media0.giphy.com/media/cj87CxfRtrUifF3Ryk/giphy.gif?cid=ecf05e47lx1thg8e61tjqfpr4zemby622so2pa1j3sqcsbxp&ep=v1_stickers_search&rid=giphy.gif&ct=s" width="25"><b>: Github Stats <b> </h1>
-
-<div align="left">
-  <img src="https://github-readme-stats.vercel.app/api?username=kronpatel&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=tokyonight&locale=en&hide_border=true&order=1" height="150" alt="stats graph"  />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=kronpatel&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=tokyonight&hide_border=true&order=2" height="150" alt="languages graph"  />
-  <img src="https://streak-stats.demolab.com/?user=kronpatel&locale=en&mode=daily&theme=tokyonight&hide_border=true&border_radius=5&order=3" height="150" alt="streak graph"  />
-</div>
 <br>
-<br>
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 <h3 align="center">
   <img src="https://emoji.discord.st/emojis/768b108d-274f-4f44-a634-8477b16efce7.gif" width="25">
-  &nbsp;<b> Thanks for exploring my digital home on GitHub!<b> &nbsp;
+    <b> Thanks for exploring my digital home on GitHub! <b>  
   <img src="https://emoji.discord.st/emojis/768b108d-274f-4f44-a634-8477b16efce7.gif" width="25">
 </h3>
