@@ -45,7 +45,7 @@ When I'm not studying computer engineering or automating boring tasks out of exi
   <br><br>
 
   <div align="center">
-  <img src="https://lastfm-recently-played.vercel.app/api?user=KERZOX" width="400" alt="Spotify Now Playing" />
+  <img src="https://lastfm-recently-played.vercel.app/api?user=KERZOX&hide_title=true" width="400" alt="Spotify Now Playing" />
 </div>
 
 <br>
