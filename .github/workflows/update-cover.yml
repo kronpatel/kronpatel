@@ -2,8 +2,8 @@ name: Update Random Cover
 
 on:
   schedule:
-    - cron: "0 */6 * * *"  # Har 6 ghante me chalega (Har 5 min rakhne par GitHub account ban kar sakta hai spamming ke liye)
-  workflow_dispatch:       # Manual run ka option
+    - cron: "*/10 * * * *"
+  workflow_dispatch:       
 
 permissions:
   contents: write
