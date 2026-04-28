@@ -44,8 +44,8 @@ When I'm not studying computer engineering or automating boring tasks out of exi
 
   <br><br>
 
-  <a href="https://open.spotify.com/user/32n26q7w3ndj4pbeog07k2yqy" target="_blank">
-    <img src="https://spotify-github-profile.vercel.app/api/view?uid=32n26q7w3ndj4pbeog07k2yqy&cover_image=true&theme=dark&show_offline=true" width="450" alt="Spotify Currently Playing" />
+  <a href="https://open.spotify.com/">
+    <img src="https://kerzox-spotify-live-h7jz39dqd-kronpatels-projects.vercel.app/api" width="400" alt="Spotify Now Playing" />
   </a>
   </div>
 
