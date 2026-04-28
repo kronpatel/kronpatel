@@ -44,8 +44,8 @@ When I'm not studying computer engineering or automating boring tasks out of exi
 
   <br><br>
 
-  <a href="https://open.spotify.com/">
-    <img src="https://kerzox-spotify-live.vercel.app/spotify" width="400" alt="Spotify Now Playing" />
+  <a href="https://www.last.fm/user/KERZOX" target="_blank">
+    <img src="https://lastfm-recently-played.vercel.app/api?user=KERZOX" width="400" alt="Spotify Now Playing" />
   </a>
   </div>
 
