@@ -45,7 +45,7 @@ When I'm not studying computer engineering or automating boring tasks out of exi
   <br><br>
 
   <a href="https://open.spotify.com/">
-    <img src="https://kerzox-spotify-live-h7jz39dqd-kronpatels-projects.vercel.app/api" width="400" alt="Spotify Now Playing" />
+    <img src="https://kerzox-spotify-live.vercel.app/spotify" width="400" alt="Spotify Now Playing" />
   </a>
   </div>
 
