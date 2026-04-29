@@ -10,8 +10,14 @@
 
 <br>
 
+<div align="left">
+  <img src="https://komarev.com/ghpvc/?username=kronpatel&label=Profile%20Views&color=0ea5e9&style=flat-square" alt="kronpatel" />
+</div>
+
+
 <h3>Hey, I'm Keron! ⚡</h3>
 <img width="20%" align="right" src="GIF's/01.gif" alt="Hacker GIF" />
+
 
 <p>A 24-year-old Computer Engineering undergrad turning coffee into code and manual tasks into automated magic.</p>
 
@@ -52,6 +58,13 @@ When I'm not studying computer engineering or automating boring tasks out of exi
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 <br>
+
+<div align="center">
+  <a href="https://github.com/ryo-ma/github-profile-trophy">
+    <img src="https://github-profile-trophy.vercel.app/?username=kronpatel&theme=tokyonight&no-frame=true&no-bg=true&margin-w=15" alt="kronpatel trophies" />
+  </a>
+</div>
+
 
 <h1 align="left"> <img src="https://i.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.webp" width="30"> <b>: Skill & Tools</b> </h1>
 <p align="center">
