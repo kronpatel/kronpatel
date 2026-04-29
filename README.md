@@ -148,6 +148,12 @@ if __name__ == "__main__":
 </div>
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
+<br>
+
+<h1 align="left"> <img src="https://media.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif" width="30"> <b>: Recent Activity</b> </h1>
+
+<br>
+
 <h1 align="left"> <img src="GIF's/02.gif" width="50"><b>: Connect With Me</b></h1>
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/keron-patel-9a757a222/)
