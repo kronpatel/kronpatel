@@ -92,8 +92,19 @@ if __name__ == "__main__":
 <p align="center">
   <img src="https://skillicons.dev/icons?i=py,js,html,css,bash,r,react,solidity,ts,nextjs,nodejs,git,github,linux,mongodb,mysql,postgres,raspberrypi,ps,bootstrap" />
 </p>
+<br>
 
 <br>
+
+<h1 align="left"> <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> <b>: Home Lab Architecture</b> </h1>
+<p align="center">
+  <img src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white" />
+  <img src="https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white" />
+  <img src="https://img.shields.io/badge/Portainer-13BEF9?style=for-the-badge&logo=portainer&logoColor=white" />
+  <img src="https://img.shields.io/badge/Pi--hole-920303?style=for-the-badge&logo=pi-hole&logoColor=white" />
+  <img src="https://img.shields.io/badge/Nginx_Proxy_Manager-009639?style=for-the-badge&logo=nginx&logoColor=white" />
+</p>
+
 
 <h1 align="left"> <img src="https://media0.giphy.com/media/cj87CxfRtrUifF3Ryk/giphy.gif" width="25"> <b>: Github Stats</b> </h1>
 <div align="center">
