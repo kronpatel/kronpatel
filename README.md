@@ -29,10 +29,32 @@
 
 <br>
 
-<h1 align="left"> <img src="GIF's/01.gif" width="30"> <b>: Fun Fact</b> </h1>
-<p>
-When I'm not studying computer engineering or automating boring tasks out of existence, I'm probably tweaking my home server containers or trying to click heads in Valorant. I firmly believe that any problem can be solved with a bit of Python, some machine learning magic, or just turning it off and on again. Some call me an engineering student, but I prefer the title "Digital Architect in Training." 🚀
-</p>
+<h1 align="left"> <img src="GIF's/01.gif" width="30"> <b>: about_me.py</b> </h1>
+
+```python
+# kerzox@home-server:~$ python3 about_me.py
+
+class KerzoxProfile:
+    def __init__(self):
+        self.name = "Keron Patel"
+        self.role = "Digital Architect in Training"
+        self.age = 24
+        
+    def get_hobbies(self):
+        return [
+            "Tweaking Home Server Containers (Docker/Portainer) �",
+            "Clicking heads in Valorant �",
+            "Automating boring tasks out of existence ⚡"
+        ]
+        
+    def execute_problem_solving(self):
+        strategies = ["Bit of Python", "Machine Learning magic", "Turn it off and on again"]
+        return f"Solution deployed using: {strategies[2]}"
+
+if __name__ == "__main__":
+    kerzox = KerzoxProfile()
+    print("Turning coffee into code and manual tasks into magic...")
+```
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
