@@ -16,6 +16,19 @@
   <img src="https://komarev.com/ghpvc/?username=kronpatel&label=Profile%20Views&color=0ea5e9&style=flat-square" alt="kronpatel" />
 </div>
 
+<h3>Hey, I'm Keron! ⚡</h3>
+<img width="20%" align="right" src="GIF's/01.gif" alt="Hacker GIF" />
+
+
+<p>A 24-year-old Computer Engineering undergrad turning coffee into code and manual tasks into automated magic.</p>
+
+- 🔭 **Focusing on:** Building seamless Automation tools
+- 🌱 **Diving deep into:** Machine Learning and data models 🤖
+- 🤝 **Open for:** Exciting new projects—let's build something awesome together!
+- 😄 **Pronouns:** He/Him
+- 🕹️ **When I'm not coding:** I'm either lost in an intense video game session 🎮 or chilling with a great playlist 🎧.
+
+<br>
 <h1 align="left"> 🔐 Security & Verification </h1>
 
 <details>
@@ -150,19 +163,6 @@ pRSxvxivnGcLcgR8w7xz6u6BkSMubeAKUd57qq+PGbXNVIU5pbK0DrbIs0GZQAYG
 
 </details>
 
-<h3>Hey, I'm Keron! ⚡</h3>
-<img width="20%" align="right" src="GIF's/01.gif" alt="Hacker GIF" />
-
-
-<p>A 24-year-old Computer Engineering undergrad turning coffee into code and manual tasks into automated magic.</p>
-
-- 🔭 **Focusing on:** Building seamless Automation tools
-- 🌱 **Diving deep into:** Machine Learning and data models 🤖
-- 🤝 **Open for:** Exciting new projects—let's build something awesome together!
-- 😄 **Pronouns:** He/Him
-- 🕹️ **When I'm not coding:** I'm either lost in an intense video game session 🎮 or chilling with a great playlist 🎧.
-
-<br>
 
 <h1 align="left"> <img src="GIF's/01.gif" width="30"> <b>: about_me.py</b> </h1>
 
